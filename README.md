@@ -14,7 +14,7 @@ Note that you may need to prefix the above with `sudo` if you're working with Co
 
 Then, for the lecture for which you want to run the examples for, ensure you've run `bundle install` in its directory to install the relevant gems.
 
-### Killing off open Sinatra sessions.
+### Killing off open Sinatra sessions
 
 When you start a Sinatra app, the web server continually listens for HTTP requests and does not terminate on its own. If you close a terminal without closing any Ruby/Sinatra processes (with CTRL+C), they will still be running in the background. This means you won't be able to start any new Sinatra apps on the same port --- you'll need to kill the old one first. To do this, open a new terminal and type:
 
