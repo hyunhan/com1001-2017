@@ -2,7 +2,17 @@
 
 Clone this repository to obtain the code examples used in lectures. The examples appear in lecture order (i.e., "1" is the first lecture etc.).
 
-Refer to the lecture slides for information on how they are supposed to be used and run.
+Refer to the lecture slides for information on how they are supposed to be used.
+
+### Installing the examples
+
+The examples require various gems. The best way to install these is to use Bundler with the provided Gemfiles. First install Bundler if you haven't already:
+
+`gem install Bundler`
+
+Note that you may need to prefix the above with `sudo` if you're working with Codio.
+
+Then, for the lecture for which you want to run the examples for, ensure you've run `bundle install` in its directory to install the relevant gems.
 
 ### killruby.sh script
 
