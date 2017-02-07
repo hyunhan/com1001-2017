@@ -16,8 +16,6 @@ Then, for the lecture for which you want to run the examples for, ensure you've 
 
 ### Killing off open Sinatra sessions.
 
-The `killruby.sh` file is a bash script that may be used to kill Ruby/Sinatra processes that you forgot to terminate with CTRL+C. 
-
-When you start a Sinatra app, the web server continually listens for HTTP requests and does not terminate on its own. If you close a terminal without closing any Ruby/Sinatra processes, they will still be running in the background. This means you won't be able to start any new Sinatra apps on the same port --- you'll need to kill the old one first. To do this, open a new terminal and type:
+When you start a Sinatra app, the web server continually listens for HTTP requests and does not terminate on its own. If you close a terminal without closing any Ruby/Sinatra processes (with CTRL+C), they will still be running in the background. This means you won't be able to start any new Sinatra apps on the same port --- you'll need to kill the old one first. To do this, open a new terminal and type:
 
 `pkill ruby`
