@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add a City</title>
+</head>
+<body>
+<h1>Add a City</h1>
+
+<% if @submitted && @all_ok %>
+  <p>City Added.</p>
+<% else %>
+
+  <% if @submitted && !@all_ok %>
+    <p style="color:red">There were errors in your form
+    submission, please correct them below.</p>
+  <% end %>
+
+  <form method="post" action="add">
+
+    <% if @submitted && !@unique %>
+      <p style="color:red">Please enter a unique city/country pair</p>
+    <% end %>
+
+    <% if @submitted && !@city_ok %>
+      <p style="color:red">Please enter a city</p>
+    <% end %>
+
+    <p>City:
+      <input type="text" name="city" value="<%=h @city if @submitted %>"/>
+    </p>
+
+    <p>Country:
+      <input type="text" name="country" value="<%=h @country if @submitted %>"/>
+    </p>
+
+    <% if @submitted && !@population_ok %>
+      <p style="color:red">Please enter a population value that is a number</p>
+    <% end %>
+
+    <p>Population:
+      <input type="text" name="population" value="<%=h @population if @submitted %>"/>
+    </p>
+
+    <input type="submit" value="Submit" />
+  </form>
+
+<% end %>
+
+</body>
+</html>

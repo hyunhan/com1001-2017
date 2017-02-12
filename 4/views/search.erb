@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search for a City</title>
+</head>
+<body>
+<h1>Search for a City</h1>
+
+<form method="get">
+  Search:
+  <input type="text" name="search"
+    value="<%=h params[:search] %>"/>
+  <input type="submit" value="Submit">
+</form>
+
+<% unless @results.nil? %>
+    <% if @results.length == 0 %>
+        <p>No search results found!</p>
+    <% else %>
+        <br />
+        <table border="1">
+          <tr>
+            <th>City</th>
+            <th>Country</th>
+            <th>Population</th>
+          </tr>
+          <% @results.each do |record| %>
+            <tr>
+                <td><%=h record[0] %></td>
+                <td><%=h record[1] %></td>
+                <td><%=h record[2] %></td>
+            </tr>
+          <% end %>
+        </table>
+    <% end %>
+<% end %>
+
+</body>
+</html>
