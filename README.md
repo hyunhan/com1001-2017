@@ -16,8 +16,8 @@ Then, for the lecture for which you want to run the examples for, ensure you've 
 
 ### Killing off open Sinatra sessions
 
-When you start a Sinatra app, the web server continually listens for HTTP requests and does not terminate on its own. If you close a terminal without closing any Ruby/Sinatra processes (with CTRL+C), they will still be running in the background. This means you won't be able to start any new Sinatra apps on the same port --- you'll need to kill the old one first. To do this, open a new terminal and type:
+When you start a Sinatra app, the web server continually listens for HTTP requests and does not terminate on its own. If you close a terminal without closing any Ruby/Sinatra processes (with CTRL+C), they will still be running in the background. This means you won't be able to start any new Sinatra apps on the same port – you'll need to kill the old one first. To do this, open a new terminal and type:
 
 `pkill ruby`
 
-Note this will kill _all_ Ruby processes on your machine --- so use with care!
+Note this will kill _all_ Ruby processes on your machine – so use with care!
