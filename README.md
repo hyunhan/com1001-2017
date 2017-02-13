@@ -8,7 +8,7 @@ Refer to the lecture slides for information on how they are supposed to be used.
 
 The examples require various gems. The best way to install these is to use Bundler with the provided Gemfiles. First install Bundler if you haven't already:
 
-`gem install Bundler`
+`gem install bundler`
 
 Note that you may need to prefix the above with `sudo` if you're working with Codio.
 
