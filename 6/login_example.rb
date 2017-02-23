@@ -1,4 +1,5 @@
 require 'sinatra'
+set :bind, '0.0.0.0' # Only needed if you're running from Codio
 
 enable :sessions
 set :session_secret, 'super secret'

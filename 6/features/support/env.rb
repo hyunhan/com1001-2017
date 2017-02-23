@@ -22,8 +22,5 @@ class Sinatra::ApplicationWorld
 end
 
 World do
-	Sinatra::ApplicationWorld.new  
+  Sinatra::ApplicationWorld.new  
 end
-
-
-
