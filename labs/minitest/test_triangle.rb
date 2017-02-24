@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative  'Triangle.rb'
+require_relative 'triangle.rb'
 
 class TestTriangle < Minitest::Test
 
